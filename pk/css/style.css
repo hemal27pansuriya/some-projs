@@ -1,9 +1,9 @@
-/* Global */
+/* *******************************Global************************************** */
 * {
     box-sizing: border-box;
 }
 
-/* Navbar */
+/* *******************************Navbar************************************** */
 .navbar {
     height: auto;
     background-color: rgba(22, 173, 103, 0.2);
@@ -14,6 +14,8 @@
     width: 70px;
     height: 72px;
     margin: 10px 15px 10px 0;
+    border: 2px solid black;
+    border-radius: 4px
 }
 
 .navbar-brand {
@@ -36,10 +38,6 @@
     text-decoration: none;
 }
 
-#nav-list {
-    margin-left: 207px;
-}
-
 #nav-list a {
     color: #222;
     font-weight: 500;
@@ -55,13 +53,78 @@ button .navbar-toggler {
     border: 2px solid #1f040d;
 }
 
-/* Jumbotron */
+.searchbar {
+    background-color: rgb(163, 221, 208);
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.searchbar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fa-search {
+    padding: 9px 3px;
+}
+
+.togglesearch {
+    background-color: #1f040d;
+    position: absolute;
+    top: 88px;
+    right: 95px;
+    width: 327px;
+    height: 63px;
+    line-height: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-top: 4px solid #16ad67;
+    display: none;
+    z-index: 1;
+}
+
+.togglesearch::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    right: 13px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid #16ad67;
+}
+
+.togglesearch input[type="text"] {
+    width: 200px;
+    padding: 0px 10px;
+    margin-left: 23px;
+    border: 1px solid #16ad67;
+    outline: none;
+}
+
+.togglesearch input[type="button"] {
+    width: 80px;
+    padding: 1px 0px;
+    background-color: #16ad67;
+    color: #fff;
+    margin-left: -6px;
+    border: 1px solid #16ad67;
+    outline: none;
+    cursor: pointer;
+}
+
+.twoinputs {
+    margin: 9px 0;
+}
+
+/* ******************************Jumbotron*********************************** */
 .jumbotron {
     position: relative;
     overflow: hidden;
     border: 0;
     border-radius: 0;
 }
+
 .jumbotron::before {
     content: "";
     position: absolute;
@@ -74,13 +137,6 @@ button .navbar-toggler {
     background-position: top center;
     opacity: 0.2;
 
-}
-.jumbotron img {
-    /* background-image: url(../img/bgjubotron1.png); */
-    /* border-radius: 0;
-    background-repeat: no-repeat;
-    background-size: 100% 400px; */
-    
 }
 
 .jumbotron .container {
@@ -150,7 +206,7 @@ button .navbar-toggler {
     margin-left: -8px;
 }
 
-/* Middle section */
+/* **************************************Middle section************************************** */
 .tindivs {
     margin: 65px -6px;
     padding: 50px 0px;
@@ -203,7 +259,7 @@ button .navbar-toggler {
 #crime:hover,
 #myth:hover,
 #mystery:hover {
-    box-shadow: 0 1px 5px 1px black;
+    box-shadow: 0 1px 5px 1px #16ad67;
 }
 
 .tiles {
@@ -243,14 +299,81 @@ button .navbar-toggler {
     right: 0;
     width: 100%;
     text-align: center;
-    font-size: 1.4em;
-    font-weight: bold;
     background-color: #16ad67;
-    color: #fff;
     opacity: 0.8;
 }
+#novel span b,
+#crime span b,
+#myth span b,
+#mystery span b {
+    font-size: 1.4em;
+    color: #fff;
+    position: relative;
+}
 
-/* Footer section */
+#shipping, #fullhours, #payment {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    border: 8px ridge ;
+    overflow: hidden;
+}
+#shipping:hover, #fullhours:hover, #payment:hover {
+    box-shadow: 0 1px 5px 1px #16ad67;
+}
+#shipping {
+    background-color: rgb(240, 161, 14);
+}
+#fullhours {
+    background-color: #076f81e7;
+}
+#payment {
+    background-color: rgb(248, 25, 92);
+}
+
+#seva1logo, #seva2logo, #seva3logo {
+    margin-top: 8px;
+    margin-left: 1px;
+}
+#seva1logodiv, #seva2logodiv, #seva3logodiv {
+    height: 75px; 
+    /* width: 75px; */
+    background-color: white;
+    border-radius: 24% 50%;
+    top: 60px;
+}
+#seva1logo {
+    background: url("../img/free-delivery.png") no-repeat;
+    height: 54px;
+    width: 70px;
+    background-size: contain;
+}
+#seva1-content, #seva2-content, #seva3-content {
+    top: 9px;
+}
+
+#seva2logo {
+    background: url("../img/24-hours.png") no-repeat;
+    height: 54px;
+    width: 70px;
+    background-size: contain;
+}
+
+#seva3logo {
+    background: url("../img/credit-card.png") no-repeat;
+    height: 54px;
+    width: 70px;
+    background-size: contain;
+}
+
+#seva1-content, #seva2-content, #seva3-content {
+    color: white;
+}
+#seva1-content-desc, #seva2-content-desc, #seva3-content-desc {
+    font-weight: 600;
+}
+/* **************************************Footer section************************************** */
 
 .footerbox-1 {
     margin-left: -41px;
@@ -289,6 +412,11 @@ button .navbar-toggler {
     margin-left: 26px;
     display: inline-block;
     background-color: #16ad67;
+}
+
+.terms-menu, .quick-links {
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 #quick-links-header {
@@ -359,10 +487,6 @@ button .navbar-toggler {
     width: 315px;
 }
 
-/* .footer .container {
-    min-width: 1140px;
-} */
-
 .footer {
     margin: 0px auto;
     padding: 30px 0px 0px 0px;
@@ -376,8 +500,14 @@ button .navbar-toggler {
 }
 
 
-/* Media queries */
+/* **************************************Media queries************************************** */
+
+/* **************************************start 1301 < ************************************** */
 @media (min-width: 1301px) {
+    #nav-list {
+        margin-left: 207px;
+    }
+
     .jumbotron {
         height: 365px;
     }
@@ -411,12 +541,19 @@ button .navbar-toggler {
     .footerbox-4 {
         right: 55px;
     }
+
     .col-auto {
         margin: 0 auto;
     }
 }
+/*************************************** end 1301 < ************************************** */
 
+/* **************************************start 1200 to 1300************************************** */
 @media (min-width: 1200px) and (max-width: 1300px) {
+    #nav-list {
+        margin-left: 207px;
+    }
+
     .terms-menu {
         width: 225px;
     }
@@ -440,16 +577,28 @@ button .navbar-toggler {
     .footerbox-4 {
         right: 55px;
     }
+
     .col-auto {
         margin: 0 auto;
     }
 }
+/* **************************************end 1200 to 1300************************************** */
 
+/* **************************************start 992 to 1199************************************** */
 @media (min-width: 992px) and (max-width: 1199px) {
     .jumbotron {
         height: 383px;
     }
+    #mystery {
+        margin-left: 315px;
+    }
 
+    #seva1logo, #seva2logo, #seva3logo {
+        margin-left: -8px;
+    }
+    #seva3logo {
+        margin-top: 12px;
+    }
     .footer .row {
         flex-direction: column;
     }
@@ -492,18 +641,35 @@ button .navbar-toggler {
         top: -190px;
         left: 342px;
     }
+
     .col-auto {
         margin: 0 auto;
     }
-    
-    
 }
+/* **************************************end 992 to 1199************************************** */
 
+/* **************************************start 768 to 991************************************** */
 @media (min-width: 768px) and (max-width: 991px) {
     .jumbotron {
-        height: 450px;
+        height: 400px;
     }
-
+    .twobuttons {
+        justify-content: center;
+    }
+    #shipping, #fullhours, #payment {
+        height: 275px;
+    }
+    #seva1logodiv, #seva2logodiv, #seva3logodiv {
+        max-width: 79px;
+        top: 22px;
+        left: 39px
+    }
+    #seva1logo, #seva2logo, #seva3logo {
+        margin-left: -2px;
+    }
+    #seva1-content, #seva2-content, #seva3-content {
+        text-align: center;
+    }
     .footer .row {
         flex-direction: column;
         overflow: hidden;
@@ -544,21 +710,41 @@ button .navbar-toggler {
     .footerbottom {
         position: relative;
         bottom: -118px;
-    } 
+    }
 
     .contact-info {
         height: 279px;
     }
+
     .col-auto {
         margin: 0 auto;
     }
 }
+/* **************************************end 768 to 991************************************** */
 
+/* **************************************start 487 to 767************************************** */
 @media (min-width: 487px) and (max-width: 767px) {
     .jumbotron {
-        height: 450px;
+        height: 484px;
     }
 
+    .jbheader {
+        margin: 0 auto;
+        width: 420px;
+    }
+
+    .twobuttons {
+        justify-content: center;
+    }
+    .tiles {
+        margin: 0 auto;
+        width: 290px;
+    }
+    #seva1logodiv, #seva2logodiv, #seva3logodiv {
+        max-width: 79px;
+        top: 22px;
+        left: 39px
+    }
     .footer .row {
         flex-direction: column;
     }
@@ -590,13 +776,13 @@ button .navbar-toggler {
         top: 20px;
         width: 285px;
     }
-    
+
     .footerbox-3 {
         margin: 0 auto;
         top: 40px;
         width: 285px;
     }
-    
+
     .footerbox-4 {
         margin: 0 auto;
         top: 60px;
@@ -621,22 +807,25 @@ button .navbar-toggler {
         /* margin-left: 197px; */
         margin: 0 auto;
     }
+
     .col-auto {
         margin: 0 auto;
     }
-
 }
+/* **************************************end 487 to 767************************************** */
 
-@media (max-width:486px) {
+/* **************************************start 360 to 486************************************** */
+@media (min-width: 360px) and (max-width:486px) {
 
     /*262 sudhi*/
     .jumbotron {
         height: 500px;
     }
+    .tiles {
+        margin: 0 auto;
+        width: 290px;
+    }
 
-    /* .footer .row {
-        flex-direction: column;
-    } */
     #footerLogo {
         margin: 0 auto;
         display: block;
@@ -653,35 +842,41 @@ button .navbar-toggler {
     .footerbox-1 {
         left: 30px;
     }
+
     .col-auto {
         margin: 0 auto;
     }
-    
+
     .footerbox-3 {
         margin: 0 auto;
-        top: 40px;
+        top: 26px;
         width: 285px;
     }
-    
+
     .footerbox-4 {
         margin: 0 auto;
-        top: 60px;
+        top: 55px;
         /* width: 285px; */
     }
+
     .terms-menu {
         width: 240px;
         margin: 0 auto;
     }
+
     .quick-links {
         width: 240px;
         margin: 0 auto;
     }
+
     .contact-info {
         margin: 0 auto;
     }
+
     .footer .container-fluid {
         height: 1240px;
     }
+
     .footerbottom {
         position: relative;
         bottom: -105px;
@@ -690,3 +885,115 @@ button .navbar-toggler {
     }
 
 }
+/* **************************************end 360 to 486************************************** */
+
+/* **************************************start 575 to 767************************************** */
+@media (min-width: 575px) and (max-width: 767px) {
+    #seva1logodiv  {
+        left: 25px;
+        top: 45px;
+        height: 90px;
+        max-width: 90px;
+    }
+    #seva1logo {
+        margin: 15px 4px;
+    }
+    #seva1-content {
+        max-width: 240px;
+        position: absolute;
+        right: 50px;
+    }
+    #fullhours, #payment {
+        height: 260px;
+    }
+    #seva2logodiv, #seva3logodiv {
+        left: 52px;
+    }
+    #seva2logo, #seva3logo {
+        margin: 9px -2px;
+    }
+    #seva2-content-header, #seva3-content-header {
+        text-align: center;
+    }
+}
+/* **************************************end 575 to 767************************************** */
+
+/* **************************************start 575 to 700************************************** */
+@media (min-width: 575px) and (max-width: 700px) {
+    #nav-list {
+        width: 440px;
+        margin-left: -15px;
+    }
+
+    #logo-img {
+        margin-left: -20px;
+    }
+
+    .cart .nav-link {
+        margin-left: -20px;
+    }
+
+    .nav-item {
+        margin-right: -13px;
+    }
+
+    .searchbar {
+        margin-right: 0px;
+        margin-left: -31px;
+    }
+}
+/* **************************************end 575 to 700************************************** */
+
+/* **************************************start 360 to 575************************************** */
+@media (min-width: 360px) and (max-width: 575px) {
+    #logo-img {
+        margin-left: -27px;
+    }
+
+    .searchbar {
+        margin-right: -69px;
+    }
+    #seva1logodiv, #seva2logodiv, #seva3logodiv {
+        left: 25px;
+        top: 45px;
+        height: 90px;
+        max-width: 90px;
+    }
+    #seva1logo, #seva2logo, #seva3logo {
+        margin: 15px 4px;
+    }
+    #seva1-content, #seva2-content, #seva3-content {
+        max-width: 240px;
+        position: absolute ;
+        right: 50px;
+    }
+
+}
+/* **************************************end 360 to 575************************************** */
+
+/* **************************************start 360 to 461************************************** */
+@media (min-width: 360px) and (max-width:461px) {
+    .jumbotron {
+        height: 700px !important;
+    }
+
+    .headersjb {
+        margin: 0 auto;
+    }
+
+    .twobuttons {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .rent-now {
+        margin: 10px 16px;
+    }
+
+    .discover {
+        margin: 10px 16px;
+    }
+}
+/* **************************************end 360 to 461************************************** */
+
+

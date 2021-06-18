@@ -37,10 +37,10 @@
 
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul id="nav-list" class="nav navbar-nav mr-auto">
-                    <li class="nav-item active mr-2">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
                     </li>
-                    <li class="nav-item dropdown mr-2">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
                             data-toggle="dropdown" aria-expanded="false"><span
                                 class="fa fa-cart-arrow-down fa-lg"></span> Shop
@@ -57,7 +57,7 @@
                             <li><a class="dropdown-item" href="#">Non-fiction</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown mr-2">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
                             data-toggle="dropdown" aria-expanded="false"><span class="fa fa-address-card fa-lg"></span>
                             About Us
@@ -69,16 +69,49 @@
                             <li><a class="dropdown-item" href="#">Return/Cancellation Policy</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item">
                         <a href="#" class="nav-link"><span class="fa fa-user-circle fa-lg"></span> My Account</a>
                     </li>
                 </ul>
 
-                <!-- <form class="d-flex">
-                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form> -->
             </div>
+            <!-- <div class="searchbar" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Hi! this is popover!">
+                <i class="fa fa-search fa-lg">
+                    <div class="togglesearch">
+                        <div class="twoinputs">
+                            <input type="text" placeholder="Enter the Text :" />
+                            <input type="button" value="Search" />
+                        </div>
+                    </div>
+                </i>
+            </div> -->
+
+            <button type="search" class="searchbar" id="btnpopover" data-html="true" data-toggle="popover"
+                data-trigger="click" data-placement="bottom" data-content="<form class='d-flex'>
+                <input type='search' id='ExecutorSearch' class='form-control me-2' placeholder='Search' aria-label='Search'>
+                <button type='submit' class='btn btn-outline-success'>Search</button>
+            </form>">
+                <i class="fa fa-search fa-lg"></i>
+            </button>
+
+            <!-- <a class="searchbar" id="btnpopover" data-toggle="popover" data-trigger="focus" data-placement="bottom" 
+                data-content="Hi! this is popover!">
+                <i class="fa fa-search fa-lg">
+                </i>
+            </a>  -->
+
+            <!-- <button class="btn btn-primary" id="btnpopover" title="popovertitle"
+                    data-content="Hi! this is popover!"
+                    data-toggle="popover" data-trigger="focus" data-placement="bottom" >primary</button> -->
+
+            <!-- <div id="popover-searchbar" style="display: none;">
+                <form class="d-flex">
+                    <input type="search" id="ExecutorSearch" class="form-control me-2" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-outline-success">Search</button>
+                </form>
+            </div>  -->
+
+
             <div class="cart ml-3">
                 <a href="#" class="nav-link"><span class="fa fa-shopping-bag fa-lg"></span></a>
             </div>
@@ -117,31 +150,31 @@
                 <div class="underborder"></div>
             </div>
             <div class="row row-content d-flex tiles">
-                <div class="col-12 col-md-6 col-lg-3 chartiles">
+                <div class="col-12 col-lg-4 col-md-6 col-xl-3">
                     <a href="">
                         <div id="novel">
-                            <span>Novel</span>
+                            <span><b>Novel</b></span>
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 chartiles">
+                <div class="col-12 col-lg-4 col-md-6 col-xl-3">
                     <a href="">
                         <div id="crime">
-                            <span>Crime</span>
+                            <span><b>Crime</b></span>
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 chartiles">
+                <div class="col-12 col-lg-4 col-md-6 col-xl-3">
                     <a href="">
                         <div id="myth">
-                            <span>Myth</span>
+                            <span><b>Myth</b></span>
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 chartiles">
+                <div class="col-12 col-lg-12 col-md-6 col-xl-3">
                     <a href="">
                         <div id="mystery">
-                            <span>Mystery</span>
+                            <span><b>Mystery</b></span>
                         </div>
                     </a>
                 </div>
@@ -155,19 +188,69 @@
                 <div class="underborder"></div>
             </div>
         </div>
-        <div class="row row-content align-self-center tindivs">
-            <div class="col-12">
-
+        <div class="row" id="tinseva">
+            <div class="col-12 col-md-4 col-sm-12">
+                <div id="shipping" class="row">
+                    <div id="seva1logodiv" class="col-12 col-lg-3 offset-1">
+                        <div id="seva1logo"></div>
+                    </div>
+                    <div id="seva1-content" class="col-12 col-lg-8">
+                        <div id="seva1-content-header">
+                            <p>
+                                <h5>FREE SHIPPING</h5>
+                            </p>
+                        </div>
+                        <div id="seva1-content-desc">
+                            <p>Why pay for shipping. Free shipping on all orders all over surat. No minimum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-6">
+                <div id="fullhours" class="row">
+                    <div id="seva2logodiv" class="col-12 col-lg-3 offset-1">
+                        <div id="seva2logo"></div>
+                    </div>
+                    <div id="seva2-content" class="col-12 col-lg-8">
+                        <div id="seva2-content-header">
+                            <p>
+                                <h5>24/7 GUARANTEE</h5>
+                            </p>
+                        </div>
+                        <div id="seva2-content-desc">
+                            <p>Our team are always here to help, 24 hours a day, 7 days a week.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-6">
+                <div id="payment" class="row">
+                    <div id="seva3logodiv" class="col-12 col-lg-3 offset-1">
+                        <div id="seva3logo"></div>
+                    </div>
+                    <div id="seva3-content" class="col-12 col-lg-8">
+                        <div id="seva3-content-header">
+                            <p>
+                                <h5>EASY PAYMENT</h5>
+                            </p>
+                        </div>
+                        <div id="seva3-content-desc">
+                            <p>Pay throgh credit cards, debit cards, net banking, digital wallet. COD available.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-3 footerbox-1">
                     <img src="./img/nav-logo.png" alt="logo" id="footerLogo">
-                    <p id="commit"><strong>We are group of readers committed to providing books with high quality and
+                    <p id="commit"><strong>We are group of readers committed to providing books with high
+                            quality and
                             low
                             price.</strong></p>
                     <p id="cmail">
@@ -240,7 +323,7 @@
             </div>
             <div class="row row-footer justify-content-center footerbottom">
                 <div class="col-auto">
-                    <p>Copyright ©2021, pustakkiraya</p>
+                    <p><strong>©2021, pustakkiraya</strong></p>
                 </div>
             </div>
         </div>
@@ -252,10 +335,16 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         // $(document).ready(function () {
-        //     $('.dropdown').hover(function () {
-        //         $('.dropdown-toggle', this).trigger('click');
+        //     $('.fa-search').click(function () {
+        //         $('.togglesearch').toggle();
+        //         $("input[type='text']").focus();
         //     });
         // });
+        $(document).ready(function () {
+            $('#btnpopover').popover();
+            // $("input[type='search']").focus();
+        });
+
     </script>
 </body>
 
