@@ -385,6 +385,32 @@ button .navbar-toggler {
     font-size: 1em;
 }
 
+.tintabs {
+    margin-top: 35px;
+}
+.tintabs ul {
+    width: 360px;
+    margin: 0 auto;
+}
+.tintabs ul li a {
+    color: rgb(206, 24, 24);
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.tintabs ul li a:hover {
+    color: rgb(206, 24, 24);
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgb(8, 8, 8);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    text-shadow: 5px 1px 5px black;
+    background: linear-gradient(  #016a7ce7,rgb(241, 177, 56), rgb(248, 25, 92));
+}
+.nav-pills .nav-link {
+    border-radius: 25px;
+}
+
 #shipping,
 #fullhours,
 #payment {
