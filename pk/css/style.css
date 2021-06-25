@@ -207,6 +207,38 @@ button .navbar-toggler {
 }
 
 /* **************************************Middle section************************************** */
+/* **************************************Middle section************************************** */
+.carousel {
+    /* background-color: linear-gradient(to bottom #76b78a,#16ad67); */
+    background: linear-gradient(#54755e, #16ad67, #54755e);
+    border: 5px inset darkgrey;
+    top: 50px;
+    margin-bottom: 20px;
+}
+.carousel-item {
+    height: 300px;
+}
+.carousel-item img {
+    margin: 35px 177px;
+    border: 3px solid #222;
+}
+.carousel-caption {
+    margin: 10px 10px 14px 254px;
+    width: 500px;
+    text-align: inherit;
+}
+.carousel-caption h3 {
+    color: khaki;
+}
+.carousel-price {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: lightyellow;
+}
+.carousel-desc {
+    font-size: 1.1em;
+    color: black;
+}
 .tindivs {
     margin: 65px -6px;
     padding: 50px 0px;
@@ -497,6 +529,7 @@ button .navbar-toggler {
 }
 
 /* **************************************Footer section************************************** */
+/* **************************************Footer section************************************** */
 .footer {
     border-top: 2px solid black;
 }
@@ -718,7 +751,12 @@ button .navbar-toggler {
     .jumbotron {
         height: 383px;
     }
-
+    .carousel-item img {
+        margin: 35px 109px ;
+    }
+    .carousel-caption {
+        margin: 10px 10px 14px 182px;
+    }
     #mystery {
         margin-left: 315px;
     }
@@ -788,7 +826,13 @@ button .navbar-toggler {
     .jumbotron {
         height: 400px;
     }
-
+    .carousel-item img {
+        margin: 35px 100px;
+    }
+    .carousel-caption {
+        width: 300px;
+        margin: 10px 10px 57px 198px;
+    }
     .twobuttons {
         justify-content: center;
     }
@@ -886,6 +930,9 @@ button .navbar-toggler {
     .twobuttons {
         justify-content: center;
     }
+    .carousel-caption {
+        display: none;
+    }
 
     .tiles {
         margin: 0 auto;
@@ -973,7 +1020,6 @@ button .navbar-toggler {
 /* **************************************start 360 to 486************************************** */
 @media (min-width: 360px) and (max-width:486px) {
 
-    /*262 sudhi*/
     .jumbotron {
         height: 500px;
     }
@@ -981,6 +1027,9 @@ button .navbar-toggler {
     .tiles {
         margin: 0 auto;
         width: 290px;
+    }
+    .carousel-caption {
+        display: none;
     }
 
     #footerLogo {
@@ -1131,11 +1180,12 @@ button .navbar-toggler {
     #logo-img {
         margin-left: -27px;
     }
-
     .searchbar {
         margin-right: -69px;
     }
-
+    .carousel {
+        display: none;
+    }
     #seva1logodiv,
     #seva2logodiv,
     #seva3logodiv {

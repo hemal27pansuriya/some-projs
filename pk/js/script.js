@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#btnpopover').popover();
-    // $("input[type='search']").focus();
+    $('#mycarousel').carousel({ interval: 3000 });
 });
 $(document).ready(function () {
     $('.1i').hover(function () {
