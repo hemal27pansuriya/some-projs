@@ -196,7 +196,10 @@ button .navbar-toggler {
     padding: 9px 35px;
     margin-left: 40px;
 }
-
+#innerpic {
+    margin-top: -37px;
+    opacity: 0.5;
+}
 .jbcorner {
     position: relative;
     font-weight: 600;
