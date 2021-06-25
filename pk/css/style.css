@@ -212,9 +212,11 @@ button .navbar-toggler {
     text-align: center;
     margin-top: 65px;
 }
+
 .top-ordered span {
     color: #16ad67;
 }
+
 .carousel {
     /* background-color: linear-gradient(to bottom #76b78a,#16ad67); */
     background: linear-gradient(#54755e, #16ad67, #54755e);
@@ -222,30 +224,37 @@ button .navbar-toggler {
     top: 50px;
     margin-bottom: 65px;
 }
+
 .carousel-item {
     height: 300px;
 }
+
 .carousel-item img {
     margin: 35px 177px;
     border: 3px solid #222;
 }
+
 .carousel-caption {
     margin: 10px 10px 14px 254px;
     width: 500px;
     text-align: inherit;
 }
+
 .carousel-caption h3 {
     color: khaki;
 }
+
 .carousel-price {
     font-size: 1.2em;
     font-weight: 500;
     color: lightyellow;
 }
+
 .carousel-desc {
     font-size: 1.1em;
     color: black;
 }
+
 .tindivs {
     margin: 65px -6px;
     padding: 50px 0px;
@@ -367,10 +376,12 @@ button .navbar-toggler {
     color: #0c0e0d;
     font-weight: 500;
 }
+
 .ti-content-price {
     font-weight: bold;
     font-size: 1.2em;
 }
+
 .ti-content-price span del {
     font-size: 0.7em;
     color: rgb(107, 104, 100);
@@ -427,25 +438,31 @@ button .navbar-toggler {
 .tintabs {
     margin-top: 35px;
 }
+
 .tintabs ul {
-    width: 360px;
+    width: 353px;
     margin: 0 auto;
 }
+
 .tintabs ul li a {
     color: rgb(206, 24, 24);
     font-weight: 500;
     font-size: 1.3em;
 }
+
 .tintabs ul li a:hover {
     color: rgb(206, 24, 24);
     font-weight: bold;
     text-shadow: 0px 1px 1px rgb(8, 8, 8);
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: #fff;
     text-shadow: 5px 1px 5px black;
-    background: linear-gradient(  #016a7ce7,rgb(241, 177, 56), rgb(248, 25, 92));
+    background: linear-gradient(#016a7ce7, rgb(241, 177, 56), rgb(248, 25, 92));
 }
+
 .nav-pills .nav-link {
     border-radius: 25px;
 }
@@ -758,12 +775,15 @@ button .navbar-toggler {
     .jumbotron {
         height: 383px;
     }
+
     .carousel-item img {
-        margin: 35px 109px ;
+        margin: 35px 109px;
     }
+
     .carousel-caption {
         margin: 10px 10px 14px 182px;
     }
+
     #mystery {
         margin-left: 315px;
     }
@@ -833,15 +853,18 @@ button .navbar-toggler {
     .jumbotron {
         height: 400px;
     }
+
+    .twobuttons {
+        justify-content: center;
+    }
+
     .carousel-item img {
         margin: 35px 100px;
     }
+
     .carousel-caption {
         width: 300px;
         margin: 10px 10px 57px 198px;
-    }
-    .twobuttons {
-        justify-content: center;
     }
 
     #shipping,
@@ -904,7 +927,7 @@ button .navbar-toggler {
     }
 
     .footer .container-fluid {
-        height: 1289px;
+        height: 1292px;
     }
 
     .footerbottom {
@@ -937,6 +960,7 @@ button .navbar-toggler {
     .twobuttons {
         justify-content: center;
     }
+
     .carousel-caption {
         display: none;
     }
@@ -1007,7 +1031,7 @@ button .navbar-toggler {
     }
 
     .footer .container-fluid {
-        height: 1289px;
+        height: 1300px;
     }
 
     .footerbottom {
@@ -1035,6 +1059,7 @@ button .navbar-toggler {
         margin: 0 auto;
         width: 290px;
     }
+
     .carousel-caption {
         display: none;
     }
@@ -1087,7 +1112,7 @@ button .navbar-toggler {
     }
 
     .footer .container-fluid {
-        height: 1240px;
+        height: 1245px;
     }
 
     .footerbottom {
@@ -1187,15 +1212,24 @@ button .navbar-toggler {
     #logo-img {
         margin-left: -27px;
     }
-    .searchbar {
-        margin-right: -69px;
-    }
+
     .carousel {
         display: none;
     }
+
     .top-ordered {
         display: none;
     }
+    .tintabs ul li a {
+        font-size: 1em;
+    }
+    .nav-pills .nav-item {
+        margin: 0 -5px;
+    }
+    .tintabs ul {
+        width: 266px;
+    }
+
     #seva1logodiv,
     #seva2logodiv,
     #seva3logodiv {
