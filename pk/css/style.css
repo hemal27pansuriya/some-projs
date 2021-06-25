@@ -1193,6 +1193,9 @@ button .navbar-toggler {
     .carousel {
         display: none;
     }
+    .top-ordered {
+        display: none;
+    }
     #seva1logodiv,
     #seva2logodiv,
     #seva3logodiv {
