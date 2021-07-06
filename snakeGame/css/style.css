@@ -71,7 +71,7 @@
 }
 
 .food {
-    background:linear-gradient(pink,yellow);
+    background: linear-gradient(pink,yellow);
     border: 3px solid green;
     border-radius: 9px;
 }

@@ -1,8 +1,7 @@
 $(document).ready(function () {
     $('#btnpopover').popover();
     $('#mycarousel').carousel({ interval: 4000 });
-});
-$(document).ready(function () {
+
     $('.1i').hover(function () {
         $('.1qw').toggle();
         $('.1w').toggle();
@@ -67,4 +66,5 @@ $(document).ready(function () {
         $('.16qw').toggle();
         $('.16w').toggle();
     });
+
 });

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Otomanopee+One&family=Poppins:wght@600&display=swap');
+
 /* *******************************Global************************************** */
 * {
     box-sizing: border-box;
@@ -11,10 +13,10 @@
 
 #logo-img {
     background: url("../img/resize-16236731311318574044navlogo.png") no-repeat;
-    border: 2px solid black;
     border-radius: 4px;
     height: 72px;
     margin: 10px 15px 10px 0;
+    outline: 2px solid black;
     width: 70px;
 }
 
@@ -116,6 +118,7 @@ button .navbar-toggler {
 .fa-shopping-bag {
     color: rgb(33, 150, 62);
 }
+
 .fa-shopping-bag:hover {
     color: #16ad67;
 }
@@ -162,15 +165,16 @@ button .navbar-toggler {
     margin-left: -23px;
     position: relative;
 }
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 .jbinner {
-    color: rgb(114, 102, 102);
-    font-family: "Raleway", Sans-serif;
+    color: rgb(27, 17, 17);
+    font-family: 'Special Elite', cursive;
     font-size: 22px;
     font-weight: bold;
     margin-left: -15px;
     text-align: center;
-    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    text-shadow: 0px 0px 5px rgb(0, 50, 0);
     text-transform: uppercase;
 }
 
@@ -197,10 +201,12 @@ button .navbar-toggler {
     margin-left: 40px;
     padding: 9px 35px;
 }
+
 #innerpic {
     margin-top: -37px;
     opacity: 0.5;
 }
+
 .jbcorner {
     font-weight: 600;
     margin-bottom: 10px;
@@ -242,9 +248,12 @@ button .navbar-toggler {
     text-align: inherit;
     width: 500px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 .carousel-caption h3 {
     color: khaki;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
 }
 
 .carousel-price {
@@ -553,6 +562,9 @@ button .navbar-toggler {
 #seva3-content-desc {
     font-weight: 600;
 }
+#seva1-content-header, #seva2-content-header, #seva3-content-header {
+    font-family: 'Otomanopee One', sans-serif;
+}
 
 /* **************************************Footer section************************************** */
 /* **************************************Footer section************************************** */
@@ -601,7 +613,7 @@ button .navbar-toggler {
 
 .terms-menu,
 .quick-links {
-    border: 1px solid black;
+    outline: 2px solid rgb(51, 47, 47);
     border-radius: 3px;
 }
 
@@ -684,33 +696,58 @@ button .navbar-toggler {
 .email-title {
     font-weight: bold;
 }
+
 .breadcrumb {
     background: linear-gradient(rgb(185, 217, 230), skyblue);
     height: 60px;
     margin-top: 20px;
 }
+
 .breadcrumb-item {
     align-self: center;
 }
+
 .breadcrumb a {
     color: red;
     font-size: 1.2em;
     font-weight: 700;
 }
+
 .breadcrumb .active {
     color: black;
     font-size: 1.2em;
     font-weight: 700;
 }
+
 #bread-header {
     color: #09133f;
-    font-family: "Comic Sans MS", sans-serif ;
+    font-family: "Comic Sans MS", sans-serif;
     font-size: 1.4em;
     font-weight: bold;
     position: absolute;
     right: 10px;
 }
-#login-form {
+
+.two-form-headers {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.two-form-headers li {
+    margin: 0 10px;
+}
+
+.login-header,
+.register-header {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#login-form,
+#register-form {
     background: linear-gradient(to bottom right, rgb(207, 151, 151), rgb(219, 224, 143), rgb(151, 207, 151), rgb(151, 151, 207));
     border: 5px outset grey;
     border-radius: 8px;
@@ -718,7 +755,10 @@ button .navbar-toggler {
     padding: 20px;
     width: 650px;
 }
-.login label, p{
+
+#login-form label,
+p,
+#register-form label {
     font-weight: 500;
     margin-top: 20px;
 }
@@ -727,15 +767,41 @@ button .navbar-toggler {
     background-color: #ee5b5b;
     border: 2px solid black;
     border-radius: 5px;
+    color: white;
+    font-weight: 500;
     height: 40px;
     margin: 5px 43%;
     width: 80px;
 }
-#forgot-password {
-    margin: 20px 39%;
+
+#register-button {
+    background-color: #ee5b5b;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    height: 40px;
+    margin: 5px 10%;
+    width: 80%;
 }
+
 #forgot-password a {
     color: black;
+}
+
+#loginorregister {
+    width: 30%;
+    margin: 0px auto;
+}
+
+.loginorregister {
+    width: 25%;
+    margin: 20px auto;
+    font-size: 2em;
+}
+.loginorregister a {
+    color: rgb(206, 24, 24);
+    font-weight: 500;
 }
 
 /* **************************************Media queries************************************** */
@@ -784,6 +850,10 @@ button .navbar-toggler {
     .col-auto {
         margin: 0 auto;
     }
+
+    #forgot-password {
+        margin: 20px 39%;
+    }
 }
 
 /*************************************** end 1301 < ************************************** */
@@ -820,6 +890,10 @@ button .navbar-toggler {
 
     .col-auto {
         margin: 0 auto;
+    }
+
+    #forgot-password {
+        margin: 20px 39%;
     }
 }
 
@@ -898,6 +972,10 @@ button .navbar-toggler {
 
     .col-auto {
         margin: 0 auto;
+    }
+
+    #forgot-password {
+        margin: 20px 39%;
     }
 }
 
@@ -997,6 +1075,10 @@ button .navbar-toggler {
     .col-auto {
         margin: 0 auto;
     }
+
+    #forgot-password {
+        margin: 20px 39%;
+    }
 }
 
 /* **************************************end 768 to 991************************************** */
@@ -1032,9 +1114,12 @@ button .navbar-toggler {
         max-width: 79px;
         top: 22px;
     }
-    #login-form {
+
+    #login-form,
+    #register-form {
         width: 525px;
     }
+
     .footer .row {
         flex-direction: column;
     }
@@ -1119,7 +1204,7 @@ button .navbar-toggler {
     .carousel-caption {
         display: none;
     }
-    
+
     #footerLogo {
         display: block;
         margin: 0 auto;
@@ -1274,12 +1359,15 @@ button .navbar-toggler {
     .top-ordered {
         display: none;
     }
+
     .tintabs ul li a {
         font-size: 1em;
     }
+
     .nav-pills .nav-item {
         margin: 0 -5px;
     }
+
     .tintabs ul {
         width: 266px;
     }
@@ -1310,7 +1398,9 @@ button .navbar-toggler {
     #tinseva {
         margin: 0 auto;
     }
-    #login-form {
+
+    #login-form,
+    #register-form {
         width: 340px;
     }
 

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Do Hyeon" type="text/css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>My Account - pustak kiraya</title>
+    <title>My Account - pustak kiraya </title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul id="nav-list" class="nav navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
+                        <a href="index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
@@ -91,7 +91,7 @@
         </div>
     </nav>
 
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <ol class="breadcrumb col-12">
                 <li class="breadcrumb-item">
@@ -106,18 +106,45 @@
             </ol>
         </div>
 
-        <div class="login">
-            <form id="login-form" action="">
-                <label for="uname">Username or email address *</label>
-                <input class="col-12" type="email" id="uname" name="username">
-                <label for="upassword">Password *</label>
-                <input class="col-12" type="password" id="upassword" name="password">
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember me</label><br>
-                <button type="submit" id="login-button" value="LOG IN">LOG IN</button>
-                <p id="forgot-password"><a href="#">forgot password?</a></p>
-            </form>
+    
+        <div class="loginorregister">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#lgg" role="tab" data-toggle="tab" class="nav-link active">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#rgg" role="tab" data-toggle="tab" class="nav-link">Register</a>
+                </li>
+            </ul>
         </div>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active" id="lgg">
+                <form id="login-form" class="">
+                    <label for="uname">Username or email address *</label>
+                    <input class="col-12" type="email" id="uname" name="username">
+                    <label for="upassword">Password *</label>
+                    <input class="col-12" type="password" id="upassword" name="password">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label><br>
+                    <button type="submit" id="login-button" value="LOG IN">LOG IN</button>
+                    <p id="forgot-password"><a href="#">forgot password?</a></p>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="rgg">
+                <form id="register-form" class="">
+                    <label for="email">Email address *</label>
+                    <input class="col-12" type="email" id="email" name="email">
+                    <p>A password will be sent to your email address.</p>
+                    <p>Your personal data will be used to support your experience throughout this website, to manage access
+                        to your account, and for other purposes described in our privacy policy.</p>
+                    <button type="submit" id="register-button" value="REGISTER">REGISTER</button>
+                </form>
+            </div>
+        </div>
+
+        
+
     </div>
 
     <footer class="footer">
